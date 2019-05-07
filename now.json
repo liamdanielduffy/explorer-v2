@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/src/routes/first.ts", "use": "@now/node" },
+    { "src": "api/src/routes/second.ts", "use": "@now/node" },
+    { "src": "api/src/routes/default.ts", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/first", "dest": "api/src/routes/first.ts" },
+    { "src": "/second", "dest": "api/src/routes/second.ts" },
+    { "src": "/(.*)", "dest": "api/src/routes/default.ts" }
+  ]
+}

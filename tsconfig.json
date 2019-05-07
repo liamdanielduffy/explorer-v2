@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es2017",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+        "~/*": [
+            "./api/src/*"
+        ]
+    },
+    "plugins": [
+        {
+            "transform": "ts-transformer-imports"
+        }
+    ]
+  },
+  "exclude": ["node_modules"]
+}
